@@ -1,13 +1,166 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding:0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  max-width: 1550px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/*Header*/
+
+header{
+  width: 97%;
+  min-height: 100px;
+  max-width: 1530px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position:fixed;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 5px 10px #08a05c50;
+  z-index: 1;
+}
+
+li{
+  list-style: none;
+}
+
+header ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+header ul li{
+  padding: 0 1rem;
+}
+
+header ul li a{
+  font-weight: bold;
+}
+
+header .cart{
+  position: relative;
+  cursor: pointer;
+}
+
+header .cart box-icon{
+  width: 45px;
+  height: 45px;
+}
+
+header .cart span{
+  position: absolute;
+  top: -1rem;
+  right: -1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: crimson;
+}
+
+.img{
+  width: 100vw;
+  height: 40%;
+  margin: auto;
+  padding: 0;
+  border: 0;
+  display: flexbox;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 0;
+  text-align: center;
+}
+
+.producto{
+  min-width: 400px;
+  margin-top: 1rem;
+}
+
+.contenedor{
+  display: inline-block;
+  width: 400px;
+  height: 250px;
+  margin: 20px;
+  padding: 0;
+
+}
+
+.contenedor figure{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.contenedor figure img {
+  width: 400px;
+  height: 250px;
+  transition: all 500ms ease-out;
+}
+
+.contenedor figure .capa{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.356);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.contenedor figure:hover > .capa{
+  opacity: 1;
+  visibility: visible;
+}
+
+.contenedor figure:hover > .capa a{
+  margin-top: 100px;
+}
+
+.contenedor figure:hover > img{
+  transform: scale(1.3);
+}
+
+.contenedor .capa a{
+  outline: none;
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  transition: all 500ms ease-out;
+  font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+.cabeza{
+  width: 97%;
+  min-height: 100px;
+  max-width: 1530px;
+}
+
+.lista_productos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
 }
