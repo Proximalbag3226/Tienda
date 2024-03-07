@@ -1,6 +1,6 @@
 import React from 'react';
-import {Header} from "./Componentes/Header";
-import {Productos} from './Componentes';
+import {Header} from "./Componentes/header";
+import {Productos} from './Componentes/productos';
 import 'boxicons';
 
 function App() {
@@ -12,13 +12,13 @@ function App() {
       <div className='lista_productos'>
       <Productos
       imagen = '02'
-      nombre = 'verde'/>
+      nombre = 'Verde'/>
       <Productos
-      imagen = '02'
-      nombre = 'verde'/>
+      imagen = '03'
+      nombre = 'Negro'/>
       <Productos
-      imagen = '02'
-      nombre = 'verde'/>
+      imagen = '04'
+      nombre = 'Blanco'/>
       </div>
     </div>
   );

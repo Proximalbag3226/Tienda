@@ -1,15 +1,15 @@
 import React from "react";
-import Nike from "../../images/Nike.jpg"
+import Logo_sf from "../images/Logo_sf.png"
 
 export const Header = () =>{
     return(
         <header>
             <a href="#">
                 <div className="logo">
-                    <img src={Nike} alt="logo" width={"150"}/>
+                    <img src={Logo_sf} alt="logo" width={"150"}/>
                 </div>
             </a>
-            <ul>
+            <ul className="header_text">
                 <li>
                     <a href={"#"}>Inicio</a>
                 </li>

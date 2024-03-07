@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
 *{
-  margin: 0;
-  padding:0;
+  margin: 0 auto;
+  padding:0 15px;
 }
 
 .App{
@@ -8,7 +9,6 @@
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 15px;
   box-sizing: border-box;
 }
 
@@ -46,6 +46,8 @@ header ul li{
 
 header ul li a{
   font-weight: bold;
+  color: green;
+  text-decoration: none;
 }
 
 header .cart{
@@ -111,8 +113,8 @@ header .cart span{
 }
 
 .contenedor figure img {
-  width: 400px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   transition: all 500ms ease-out;
 }
 
@@ -159,8 +161,17 @@ header .cart span{
 }
 
 .lista_productos{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
+  justify-content: CENTER;
+  margin-top: 1;
+}
+
+.header_text{
+  font-family: 'Montserrat';  
+  font-size: x-large;
+  font-weight: bold;
 }
