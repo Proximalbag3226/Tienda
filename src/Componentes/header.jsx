@@ -14,7 +14,7 @@ export const Header = () =>{
                     <a href={"#"}>Inicio</a>
                 </li>
                 <li>
-                    <a href={"#"}>Productos</a>
+                    <a href={"/productos"}>Productos</a>
                 </li>
             </ul>
             <div className="cart">

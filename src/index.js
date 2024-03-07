@@ -7,7 +7,7 @@ import Home from './pages/home';
 
 const rutas = createBrowserRouter([
   {
-    path: "/hola",
+    path: "/productos",
     element: <App/>
   },
   {

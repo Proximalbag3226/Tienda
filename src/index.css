@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
 *{
-  margin: 0 auto;
-  padding:0 15px;
+  margin: 0;
+  padding:0;
 }
 
 .App{
@@ -9,6 +9,7 @@
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
+  padding: 0 15px;
   box-sizing: border-box;
 }
 
@@ -174,4 +175,41 @@ header .cart span{
   font-family: 'Montserrat';  
   font-size: x-large;
   font-weight: bold;
+}
+
+.tarjeta{
+  display: flex;
+  height: 700px;
+  width: 33.1%;
+  margin-top: 1rem;
+  background-color: antiquewhite;
+  border-radius: 8px;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: space-around;
+  text-align: end;
+}
+
+.tarjeta img{
+  height: 95%;
+  width: 93%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.novedades{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1;
+  gap: 5px;
+}
+
+.central{
+  width: fit-content;
+  height: auto;
 }
