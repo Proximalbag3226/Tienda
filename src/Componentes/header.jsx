@@ -11,7 +11,7 @@ export const Header = () =>{
             </a>
             <ul className="header_text">
                 <li>
-                    <a href={"#"}>Inicio</a>
+                    <a href={"/"}>Inicio</a>
                 </li>
                 <li>
                     <a href={"/productos"}>Productos</a>

@@ -14,7 +14,11 @@ function Home(props){
                 <Tarjetas
                 imagen = "novedades1"/>
             </div>
-            <div>
+            <div className="central">
+            <figure>
+                <img src={require("../images/deportiva.jpg")}/>
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</h1>
+            </figure>
             </div>
         </div>
     )
