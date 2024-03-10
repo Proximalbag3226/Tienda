@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';  
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
-import App from './App';
+import App from './pages/productos';
 import Home from './pages/home';
+import { Carrito } from './pages/carrito';
 
 const rutas = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const rutas = createBrowserRouter([
   {
     path: "/",
     element: <Home/>
+  },
+  {
+    path: "/carrito",
+    element: <Carrito/>
   }
 ])
 

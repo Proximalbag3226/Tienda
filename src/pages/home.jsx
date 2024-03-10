@@ -1,5 +1,6 @@
 import { Header } from "../Componentes/header";
 import { Tarjetas } from "../Componentes/tarjetas";
+import PopularKeywordsComponent from "../Componentes/settitles";
 function Home(props){
     return(
         <div className="App">
@@ -20,6 +21,8 @@ function Home(props){
                 <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"</h1>
             </figure>
             </div>
+            <PopularKeywordsComponent
+            nombre = 'Hola'/>
         </div>
     )
 }

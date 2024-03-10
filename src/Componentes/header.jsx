@@ -18,8 +18,10 @@ export const Header = () =>{
                 </li>
             </ul>
             <div className="cart">
+                <a href="/carrito">
                 <box-icon name={"cart"}></box-icon>
                 <span className="item__total">0</span>
+                </a>
             </div>
         </header>
     );
