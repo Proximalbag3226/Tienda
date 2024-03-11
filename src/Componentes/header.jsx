@@ -6,7 +6,9 @@ export const Header = () =>{
         <header>
             <a href="#">
                 <div className="logo">
+                    <a href="/">
                     <img src={Logo_sf} alt="logo" width={"150"}/>
+                    </a>                
                 </div>
             </a>
             <ul className="header_text">

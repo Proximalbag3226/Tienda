@@ -304,7 +304,7 @@ header .cart span{
 }
 
 .grid-container {
-  margin: 0 auto;
+  margin: 1.5rem;
   max-width: 1200px;
   padding: 20px;
 }
@@ -349,3 +349,18 @@ header .cart span{
   }
 }
 
+.titulo_lista{
+  font-size: xxx-large;
+}
+
+.lista{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+  gap: 5px;
+  font-size: xx-large ;
+}

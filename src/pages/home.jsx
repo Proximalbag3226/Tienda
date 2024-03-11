@@ -22,7 +22,12 @@ function Home(props){
             </figure>
             </div>
             <PopularKeywordsComponent
-            nombre = 'Hola'/>
+            producto1 = 'Tenis'
+            producto2 = 'Suadaderas y hoddies'
+            producto3 = 'Gorras'
+            producto4 = 'Pants'
+            producto5 = 'Playeras'
+            producto6 = 'Accesorios'/>
         </div>
     )
 }
