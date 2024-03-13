@@ -304,8 +304,8 @@ header .cart span{
 }
 
 .grid-container {
-  margin: 1.5rem;
-  max-width: 1200px;
+  margin-top: 1.5rem;
+  margin-left: 5rem; 
   padding: 20px;
 }
 
@@ -316,6 +316,7 @@ header .cart span{
 }
 
 ._keywords-content_1t7ue_11 {
+  text-align: center;
   flex: 1;
 }
 
@@ -324,23 +325,25 @@ header .cart span{
   margin-bottom: 20px;
 }
 
-._keyword-wrapper_1t7ue_54 {
-  flex: 0 0 50%; /* Dos columnas en pantallas grandes */
+._keyword-wrapper_1t7ue_54 { /* Dos columnas en pantallas grandes */
   padding: 10px; /* Espaciado entre los elementos */
 }
 
 ._keyword-wrapper_1t7ue_54 a {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   display: block;
   padding: 10px;
   background-color: #f0f0f0;
   color: #333;
   text-decoration: none;
-  border-radius: 5px;
+  border-bottom: 3px solid;
   transition: background-color 0.3s ease;
 }
 
 ._keyword-wrapper_1t7ue_54 a:hover {
-  background-color: #ccc;
+  background-color: #1312121c;
+  cursor: pointer;
+  border-bottom: 7px solid;
 }
 
 @media screen and (max-width: 768px) {
@@ -351,16 +354,55 @@ header .cart span{
 
 .titulo_lista{
   font-size: xxx-large;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 4vh;
+  margin-left: 3vh;
 }
 
 .lista{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: center;
   margin-bottom: 2%;
-  gap: 5px;
+  gap: 20px;
   font-size: xx-large ;
+}
+
+.galeria {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: column;
+  width: 35%;
+}
+
+.galeria img {
+  width: 100%;
+  transition: transform 0.2s ease;
+  border-radius: 5px;
+}
+
+.galeria img:hover {
+  transform: scale(1.2); /* Aumentar el tamaño al pasar el cursor sobre la imagen */
+}
+
+.productgalery{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.david_laid{
+  width: 90%;
+  border-radius: 4px;
+  transition: transform 0.2 ease;
+}
+
+.david_laid:hover{
+  width: 100%;
+  filter: contrast(120%);
 }
