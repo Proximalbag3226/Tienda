@@ -28,7 +28,6 @@ function Home(props){
                 <img src = {require("../images/producto3.jpeg")}/>
                 <img src = {require("../images/producto4.jpg")}/>
                 <img src = {require("../images/producto5.jpg")}/>
-                <img src = {require("../images/producto6.jpg")}/>
             </section>
             <PopularKeywordsComponent
             producto1 = 'Tenis'
@@ -39,7 +38,7 @@ function Home(props){
             producto6 = 'Accesorios'
             producto7 = 'Gym'
             producto8 = 'Colaboraciones'
-            producto9 = 'Running'
+            producto9 = 'Tacos de futbol'
             producto10 = 'Skate'
             producto11 = 'Running'
             producto12 = 'Exclusivos'/>

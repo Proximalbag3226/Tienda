@@ -406,3 +406,12 @@ header .cart span{
   width: 100%;
   filter: contrast(120%);
 }
+
+.carrito{
+  margin-top: 5%;
+  height: auto;
+  width: 100%;
+  background-color: #ccc39b96;
+  border-radius: 5px;
+  padding-left: 3%;
+}

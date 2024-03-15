@@ -27,7 +27,7 @@ function App() {
         data.map((producto, index) => (
           <Productos
           imagen = {producto.imagen}
-          nombre = {producto.nombre}
+          producto = {producto.producto}
           allproducts = {allproducts}
           setallproducts = {setallproducts}
           allcount = {allcount}
