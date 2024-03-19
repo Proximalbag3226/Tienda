@@ -5,7 +5,7 @@ import { useContext, useEffect, useState } from "react";
 
 export function Carrito(){
     const[carrito, setCarrito] = useContext(Carritocontext)
-    const [toal, setTotal] = useState(0);
+    const [total, setTotal] = useState(0);
 
     const EliminarProducto = (id) => {
         const NuevoCarrito = carrito.filter((producto) => producto.id !== id);
@@ -34,15 +34,21 @@ export function Carrito(){
             <Header/>
             </div>
             <div className="carrito">
-                {
+                {   
                 carrito.length === 0 ? (
                         <p>No hay productos en el carrito de compras </p>
                     ) : (
                         carrito.map((producto) => (
-
-                        )
+                            <div className="productos_carrito" key={producto.id}>
+                                <p>{producto.nombre}</p>
+                                <p>{producto.precio}</p>
+                                <button onClick={() => EliminarProducto(producto.id)}>Eliminar producto</button> 
+                            </div>
                     ))
+                    )
                 }
+                <br/>
+                <h2>Total: {total}</h2>
             </div>
         </div>
     );

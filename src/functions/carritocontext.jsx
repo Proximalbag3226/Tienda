@@ -14,7 +14,7 @@ export function CarritoProvider(props){
 
     //Y esta funcion se ejecuta al cierre de la aplicacion para guardar el carito en el almacenamiento local
     useEffect(() => {
-        localStorage.setItem("carrito", JSON.stringify(Carrito));
+        localStorage.setItem("carrito", JSON.stringify(carrito));
     }, [carrito]);
 
     return(
